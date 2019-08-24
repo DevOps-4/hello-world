@@ -13,6 +13,7 @@
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+    <sonar.host.url>http://18.191.235.186:9000/</sonar.host.url>
   </properties>
 
   <modules>
@@ -26,6 +27,17 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
+     <repository>
+	      <id>nexus</id>
+	      <name>Hello World Releases Nexus Repository</name>
+	      <url>http://52.14.48.103:8081/repository/test-release/</url>
+	    </repository>
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Hello World Snapshot Nexus Repository </name>
+	      <url>http://52.14.48.103:8081/repository/test-snapshot/</url>
+	    </snapshotRepository>      
+     
   </distributionManagement>
 
   <build>
